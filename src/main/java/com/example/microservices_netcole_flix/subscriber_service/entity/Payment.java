@@ -38,7 +38,6 @@ public class Payment {
     @JoinColumn(name = "subscriber_id", nullable = false)
     private Subscriber subscriber;
 
-    // Constructeurs
     public Payment() {}
 
     public Payment(BigDecimal amount, LocalDate paymentDate, Subscription subscription, Subscriber subscriber) {
@@ -47,8 +46,6 @@ public class Payment {
         this.subscription = subscription;
         this.subscriber = subscriber;
     }
-
-    // Getters et Setters
     public Long getIdPayment() { return idPayment; }
     public void setIdPayment(Long idPayment) { this.idPayment = idPayment; }
 
